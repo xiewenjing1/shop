@@ -52,25 +52,25 @@
   </div>
 </template>
 <script type="text/ecmascript-6">
-import pcBanner from "components/banner";
-import { homeList } from "./config/config";
+import pcBanner from 'components/banner';
+import { homeList } from './config/config';
 
 export default {
   data() {
     return {
       categoryData: [
         {
-          categoryId: "",
-          categoryName: "",
+          categoryId: '',
+          categoryName: '',
           categoryList: [
             {
-              categoryId: "",
-              categoryName: "",
-            },
-          ],
-        },
+              categoryId: '',
+              categoryName: ''
+            }
+          ]
+        }
       ],
-      homeList,
+      homeList
     };
   },
   mounted() {
@@ -87,29 +87,29 @@ export default {
   },
   methods: {
     getImage(index1, index2) {
-      return require("../../assets/image/floor/floor" +
+      return require('../../assets/image/floor/floor' +
         (index1 + 1) +
-        "-" +
+        '-' +
         (index2 + 1) +
-        ".jpg");
+        '.jpg');
     },
     goGoodsListPage(categoryId, keyword) {
       let param = {};
       param.categoryId = categoryId;
       param.keyword = keyword;
-      this.loadPage("goods-list", param);
+      this.loadPage('goods-list', param);
     },
     queryCategoryData(resolve) {
       this.ajax({
-        type: "GET",
+        type: 'GET',
         url: `/uac/auth/category/getProductCategoryDtoByPid/0`,
-        success: resolve,
+        success: resolve
       });
-    },
+    }
   },
   components: {
-    pcBanner,
-  },
+    pcBanner
+  }
 };
 </script>
 <style rel="stylesheet/scss" lang="scss">
