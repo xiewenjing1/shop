@@ -35,10 +35,10 @@ axios.interceptors.response.use((res) => {
       alert('网关错误');
     } else {
       console.log('Error', error.message);
-      alert('接口请求失败或超时！请刷新重试');
+      // alert('接口请求失败或超时！请刷新重试');
     }
   } else {
-    alert('接口请求失败或超时！请刷新重试');
+    // alert('接口请求失败或超时！请刷新重试');
   }
 });
 

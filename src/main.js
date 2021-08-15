@@ -24,7 +24,11 @@ import {
   Form,
   formItem,
   MessageBox,
-  Message
+  Message,
+  Dropdown,
+  DropdownMenu,
+  DropdownItem,
+  Card
 } from 'element-ui';
 
 const components = [
@@ -32,6 +36,10 @@ const components = [
   Dialog,
   Button,
   Form,
+  Card,
+  Dropdown,
+  DropdownMenu,
+  DropdownItem,
   formItem
 ];
 
@@ -136,10 +144,10 @@ Vue.prototype.$http.interceptors.response.use((res) => {
       alert('您无访问权限');
     } else {
       console.log('Error', error.message);
-      alert('接口请求失败或超时！请刷新重试');
+      // alert('接口请求失败或超时！请刷新重试');
     }
   } else {
-    alert('接口请求失败或超时！请刷新重试');
+    // alert('接口请求失败或超时！请刷新重试');
   }
 });
 
