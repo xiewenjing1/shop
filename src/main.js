@@ -28,7 +28,9 @@ import {
   Dropdown,
   DropdownMenu,
   DropdownItem,
-  Card
+  Card,
+  Rate,
+  Pagination
 } from 'element-ui';
 
 const components = [
@@ -40,6 +42,8 @@ const components = [
   Dropdown,
   DropdownMenu,
   DropdownItem,
+  Rate,
+  Pagination,
   formItem
 ];
 
