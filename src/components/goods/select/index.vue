@@ -224,6 +224,9 @@ export default {
         color: #666;
         padding: 2px 10px;
         border: none;
+        &:hover, &:focus {
+          background-color: #fff;
+        }
       }
     }
   }
