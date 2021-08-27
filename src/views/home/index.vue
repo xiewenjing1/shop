@@ -7,7 +7,6 @@
             v-for="nodeContent in item.content"
             :key="nodeContent.id"
             class="link"
-            target="_blank"
             href="javascript:void(0)"
             @click="goGoodsListPage('', nodeContent.name)"
             >{{ nodeContent.name }}</a
