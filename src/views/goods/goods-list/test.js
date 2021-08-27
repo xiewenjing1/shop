@@ -149,3 +149,40 @@ export const productList = [
     ]
   }
 ];
+export const likeData = [
+  {
+    id: 1,
+    mainImage: require('../../../assets/image/goods/like1.jpg'),
+    name: '晓寿司（望京soho店）',
+    address: '望京',
+    price: 83.0
+  },
+  {
+    id: 2,
+    mainImage: require('../../../assets/image/goods/like2.jpg'),
+    name: 'coao初妆美甲美睫（SOHO尚都店）',
+    address: '朝外大街/世贸天阶',
+    price: 118.0
+  },
+  {
+    id: 3,
+    mainImage: require('../../../assets/image/goods/like3.jpg'),
+    name: '屯老二农家铁锅炖（松园店）',
+    address: '昌平镇',
+    price: 16.0
+  },
+  {
+    id: 4,
+    mainImage: require('../../../assets/image/goods/like4.jpg'),
+    name: '芦月轩羊蝎子（杨闸店）',
+    address: '管庄',
+    price: 79.9
+  },
+  {
+    id: 5,
+    mainImage: require('../../../assets/image/goods/like5.jpg'),
+    name: '华莱士炸鸡汉堡（石油大学店）',
+    address: '昌平镇',
+    price: 10.9
+  }
+];

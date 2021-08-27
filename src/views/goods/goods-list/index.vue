@@ -56,7 +56,7 @@
         </div>
       </div>
       <!-- 猜你喜欢容器 -->
-      <pcGoodslike class="pc-goods-like"></pcGoodslike>
+      <pcGoodslike class="pc-goods-like" :likeData="likeData"></pcGoodslike>
     </div>
   </div>
 </template>
@@ -65,7 +65,7 @@ import pcGoodsList from 'components/goods/list';
 import pcGoodsSelect from 'components/goods/select';
 import pagination from 'components/goods/pagination';
 import pcGoodslike from 'components/goods/like';
-import { testSelctData, productList } from './test';
+import { testSelctData, productList, likeData } from './test';
 
 export default {
   data() {
@@ -77,6 +77,7 @@ export default {
       isDesc: false,
       orderBy: 'name asc',
       testSelctData,
+      likeData,
       productList
     };
   },
@@ -145,10 +146,9 @@ export default {
   .p-list-con {
     width: 950px;
   }
-  
+
   .pc-goods-like {
     width: 230px;
-    background-color: lightgreen;
   }
 }
 </style>
